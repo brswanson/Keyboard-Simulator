@@ -4,16 +4,16 @@ A simple Python script for simulating and listening for keystrokes in a Windows 
 
 ## About
 
-The leveling rotation for an Arcanist in FF14 is so boring that I looked for a way to simulate keystrokes in Python. Once I worked through that, I needed a way to toggle the script off and on so I could chat or take over when needed.
+The leveling rotation for an Arcanist in FF14 is so boring that I looked for a way to simulate keystrokes in Python. Once I worked through that, I needed a way to toggle the script off and on so I could chat or take over when needed. There's also a quick attempt at determing the correct skill order based on a limited amount of information but it's currently very naive.
 
 ### Pros
 
 - Simulation of keystrokes in a Windows environment.
 - Simplistic rotation of keystrokes based on damage per second. Useful for basic MMO ability rotations or other repetitive tasks.
-- Independent threads for simulating and listening for keystrokes
+- Independent threads for simulating and listening for keystrokes.
 
 ### Cons/To Do
 
 - Read from a config file to determine keystrokes and their characteristics; currently hard coded.
-- Improve the rotation algorithm so it can handle more advanced MMO features (currently only damage of time effects and direct damage)
-- Improve the rotation aglorithm so it re-evaluates the order of keys to press based on context
+- Improve the rotation algorithm so it can handle more advanced features (currently only damage of time and direct damage).
+- Improve the rotation aglorithm so it re-evaluates the order of keys to press based on context.
